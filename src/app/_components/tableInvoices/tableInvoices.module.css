@@ -1,0 +1,18 @@
+.td-row, .th-row {
+    width: 25%;
+}
+
+.td-billing-date, .th-billing-date {
+    width: 40%;
+}
+
+.td-povider, .th-provider {
+    width: 10%;
+}
+
+.table-invoices {
+    width: 80%;
+    margin-bottom: 15px;
+    margin-inline: auto;
+    font-size: large;
+}
