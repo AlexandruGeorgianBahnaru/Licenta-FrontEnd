@@ -1,28 +1,23 @@
-'use client'
+"use client";
 import { useState } from "react";
-import Header from "@/app/_components/home/header/Header";
-import MainContainer from "@/app/_components/mainContainer/MainContainer"
+import MainContainer from "@/app/_components/mainContainer/MainContainer";
 import NavBarLogin from "@/app/_components/navBarLogin/NavBarLogin";
-import MenuButtons from "./menuButtons/MenuButtons";
-
-
+import MenuButtons from "@/app/_components/menuButtons/MenuButtons";
+import { useRouter } from "next/navigation";
 
 const Home = () => {
+  const [shownContainer, setShownContainer] = useState("info-invoices");
 
-  const [shownContainer, setShownContainer] = useState("show-invoices")
-
-  const showInvoices = (type: string) =>{
+  const showInvoices = (type: string) => {
     setShownContainer(type);
-  }
+  };
 
   return (
     <div className="main-background">
-    <NavBarLogin/>
-    <Header/>
-    <MenuButtons showInvoices={showInvoices}/>
-    <MainContainer shownContainer={shownContainer}/>
+      <MenuButtons showInvoices={showInvoices} />
+      <MainContainer shownContainer={shownContainer} />
     </div>
   );
-}
+};
 
 export default Home;

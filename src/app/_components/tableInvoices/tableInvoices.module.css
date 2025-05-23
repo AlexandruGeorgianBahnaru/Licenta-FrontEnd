@@ -1,18 +1,55 @@
-.td-row, .th-row {
-    width: 25%;
+.tr {
+  height: 10px;
+  font-size: 15px;
 }
 
-.td-billing-date, .th-billing-date {
-    width: 40%;
+.td-name,
+.th-name {
+  width: 25%;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 2px;
 }
 
-.td-povider, .th-provider {
-    width: 10%;
+.td-row,
+.th-row {
+  width: 15%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 2px;
+}
+
+.td-billing-date,
+.th-billing-date {
+  width: 20%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 2px;
+}
+
+.td-outstanding-balance,
+.th-outstanding-balance {
+  width: 20%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 2px;
+}
+
+.td-billed-quantity,
+.th-billed-quantity {
+  width: 15%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .table-invoices {
-    width: 80%;
-    margin-bottom: 15px;
-    margin-inline: auto;
-    font-size: large;
+  width: 80%;
+  margin-bottom: 15px;
+  margin-inline: auto;
+  font-size: large;
 }

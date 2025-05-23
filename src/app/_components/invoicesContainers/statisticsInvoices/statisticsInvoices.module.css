@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.yearSelectContainer {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.yearSelectLabel {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  margin-right: 15px;
+}
+
+.yearSelect {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.yearSelect:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.chartContainer {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+}
